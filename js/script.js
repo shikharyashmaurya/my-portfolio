@@ -1,3 +1,11 @@
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
 let sections=document.querySelectorAll("section");
 let navLinks=document.querySelectorAll("header nav a");
 
@@ -15,10 +23,14 @@ window.onscroll=()=>{
             });
         };
     });
-};
 
-let header=document.querySelector("header");
-header.classList.toggle("sticky",window.scrollY>100);
+    let header=document.querySelector("header");
+    header.classList.toggle("sticky",window.scrollY>100);
+
+    // remove toggle icon and navbar when click navbar link (scroll)
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+};
 
 ScrollReveal({
     // reset:true,
@@ -27,13 +39,13 @@ ScrollReveal({
     delay:200
 });
 
-ScrollReveal().reveal(".home-content,.heading",{origin:"top"});
-ScrollReveal().reveal(".home-img,.services-container,.portfolio-box,.contact form",{origin:"bottom"});
-ScrollReveal().reveal(".home-content h1,.about-img",{origin:"left"});
-ScrollReveal().reveal(".home-content p,.about-content",{origin:"right"});
+ScrollReveal().reveal(".home-content, .heading",{origin:"top"});
+ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .experience-box",{origin:"bottom"});
+ScrollReveal().reveal(".home-content h1, .about-img",{origin:"left"});
+ScrollReveal().reveal(".home-content p, .about-content",{origin:"right"});
 
 const typed = new Typed(".multiple-text",{
-    strings:["Data Scientist","Genai Engineer"],
+    strings:["AI Engineer", "GenAI Specialist", "Backend Developer"],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
