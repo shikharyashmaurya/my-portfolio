@@ -5,175 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
+    <!-- Use Inter font for modern aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Background overlay for glassmorphism -->
+    <div class="bg-overlay"></div>
+
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
         <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Interests</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
             <a href="#Portfolio">Projects</a>
-            <!-- <a href="#contact">Contact</a> -->
         </nav>
     </header>
+    
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello,its me </h3>
+            <h3>Hello, it's me </h3>
             <h1>Shikhar Maurya</h1>
-            <h3>and i am a <span class="multiple-text"></span></h3>
-            <!-- <p>I am a hardworking individual eager to collaborate with anyone interested in exploring the universe's laws, solving complex problems, and embracing cutting-edge innovations</p> -->
+            <h3>and I am an <span class="multiple-text"></span></h3>
+            <p>AI Engineer specializing in LLM-powered enterprise applications, retrieval-augmented generation, and backend-integrated workflows.</p>
             <div class="social-media">
-                <!-- <a href="#"><i class="bx bxl-facebook"></i></a> -->
                 <a href="https://github.com/shikharyashmaurya" target="_blank"><i class="bx bxl-github"></i></a>
                 <a href="https://x.com/mauryashikhar87" target="_blank"><i class="bx bxl-twitter"></i></a>
                 <a href="mailto:mauryashikhar87@gmail.com" target="_blank"><i class="bx bxl-google"></i></a>
-                <!-- <a href="#"><i class="bx bxl-linkedin"></i></a> -->
-                <!-- <a href="https://huggingface.co/spaces/"><i class="bx bxl-huggingface"></i></a> -->
             </div>
-            <a href="https://drive.google.com/file/d/1ox8eb7t14LDmR_WyFBDfKUrAWw6uM40i/view?usp=sharing"  target="_blank" class="btn">See my Resume</a>
+            <a href="https://drive.google.com/file/d/1RCLit6CmAHNjMWAfpqPYXMl1rEDO5JY-/view?usp=sharing" target="_blank" class="btn">See my Resume</a>
         </div>
         <div class="home-img">
-            <img src="images/edited.jpg" alt="">
+            <img src="images/edited.jpg" alt="Shikhar Maurya">
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/edited.jpg" alt="">
+            <img src="images/edited.jpg" alt="Shikhar Maurya">
         </div>
-
         <div class="about-content">
-            <h2  class="heading">About <span>Me</span></h2>
-            <!-- <h3>Data Scientist</h3> -->
-            <p>I am a passionate and hardworking individual with a deep interest in physics, artificial intelligence, and technology. My fascination with the fundamental laws of the universe drives my curiosity in physics, where I enjoy unraveling the mysteries that govern our world. In the realm of artificial intelligence, I am dedicated to developing intelligent systems that can learn, adapt, and solve complex problems, pushing the boundaries of what's possible. Technology, in all its forms, captivates me with its constant evolution and potential to innovate and improve our daily lives. I am always eager to learn and stay updated with the latest advancements. I am enthusiastic about collaborating with like-minded individuals who share my passion for discovery and innovation. Together, I believe we can create groundbreaking solutions and contribute meaningfully to the advancement of science and technology. Let's work together to explore new horizons and achieve extraordinary goals.</p>
-            <!-- <a href="#" class="btn">Read More</a> -->
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>I am an AI Engineer specializing in LLM-powered enterprise applications, retrieval-augmented generation, and backend-integrated workflows. My experience encompasses building systems for code and log analysis, secure document intelligence, natural language querying, and legacy modernization. I have a strong focus on retrieval accuracy, response quality, security, and deploying production-oriented AI solutions that solve real-world problems.</p>
         </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="experience" id="experience">
+        <h2 class="heading">My <span>Experience</span></h2>
+        <div class="experience-container">
+            <div class="experience-box glass-panel">
+                <i class='bx bx-briefcase'></i>
+                <h3>AI Engineer | GenAI & Agentic AI Systems</h3>
+                <h4>Tata Consultancy Services (TCS)</h4>
+                <p class="timeline-date">June 2025 - Present</p>
+                <ul class="experience-list">
+                    <li>Designed an LLM-powered RAG system to analyze logs and codebases, reducing manual debugging effort by 40-50%.</li>
+                    <li>Built a hybrid retrieval pipeline integrating FAISS, Whoosh, and Neo4j, improving response relevance by 25-35%.</li>
+                    <li>Developed an AI agent converting natural language into SQL queries and Pandas code, reducing manual effort time by 60%.</li>
+                    <li>Implemented secure document handling with data masking and password-protected outputs using regex, LLMs, Scrubadub, Spire, and Aspose.</li>
+                    <li>Built a rules-based scoring engine with human-in-the-loop support, improving lead evaluation efficiency.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <h2 class="heading">My <span>Interests</span></h2>
-
+    <section class="services" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
         <div class="services-container">
-
-            <div class="services-box">
-
-                <i class="bx bx-code-alt"></i>
-
-                <h3>Artificial intelligence</h3>
-
-                <p>Artificial Intelligence captivates me with its potential to transform industries and
-                     everyday life. I am keen on developing intelligent systems that can learn, adapt, and 
-                     solve complex problems, pushing the boundaries of what's possible in technology.</p>
-
-<!-- <a href="#" class="btn">Read More</a> -->
-
-</div>
-
-<div class="services-box">
-
-    <i class="bx bxs-paint"></i>
-
-    <h3>Physics</h3>
-
-    <p>Exploring the fundamental laws of the universe, from quantum mechanics to relativity,
-         drives my passion for physics. I am fascinated by the intricate principles that govern 
-         the natural world and enjoy unraveling the mysteries of the cosmos.</p>
-
-<!-- <a href="#" class="btn">Read More</a> -->
-
-</div>
-
-<div class="services-box">
-
-    <i class="bx bx-bar-chart-alt"></i>
-
-    <h3>Technology</h3>
-
-    <p>My enthusiasm for technology lies in its constant evolution and its ability to
-         innovate and improve our daily lives. I am particularly interested in the latest
-          advancements and how they can be applied to create cutting-edge solutions.</p>
-
-<!-- <a href="#" class="btn">Read More</a> -->
-
-</div>
-
-</div>
-
-</section>
-
-<section class="Portfolio" id="Portfolio">
-    <h2 class="heading">Latest <span>Projects</span></h2>
-    <div class="portfolio-container"> 
-    <div class="portfolio-box">
-    <img src="images/cat.png" alt="">
-    <div class="portfolio-layer">
-    <h4>Prompt-generation-from-image</h4>
-    <p>generates prompt for the uploaded image</p>
-     <a href="https://huggingface.co/spaces/shikharyashmaurya/Prompt-generation-from-image" target="_blank"><i class='bx bx-link-external' ></i></a>
-    </div>
-    </div>
-    <div class="portfolio-box">
-        <img src="images\space-and-water.png" alt="">
-        <div class="portfolio-layer">
-        <h4>Youtube video summary</h4>
-        <p>Generate the summary of the video generated.</p>
-         <a href="https://huggingface.co/spaces/shikharyashmaurya/youtube-video-summariser" target="_blank"><i class='bx bx-link-external' ></i></a>
-        </div>
-        </div>
-    <div class="portfolio-box">
-        <img src="images\underwater city.png" alt="">
-        <div class="portfolio-layer">
-        <h4>Image Summary</h4>
-        <p>Generate the summary of the image or ask questions from the image.</p>
-            <a href="https://huggingface.co/spaces/shikharyashmaurya/image-summary" target="_blank"><i class='bx bx-link-external' ></i></a>
-        </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="images\ocean meets space.png" alt="">
-            <div class="portfolio-layer">
-            <h4>Audio summary</h4>
-            <p>Generate the summary from the audio or ask questions from the audio.</p>
-                <a href="https://huggingface.co/spaces/shikharyashmaurya/Audio-Application" target="_blank"><i class='bx bx-link-external' ></i></a>
+            <div class="services-box glass-panel">
+                <i class="bx bx-brain"></i>
+                <h3>AI / GenAI</h3>
+                <p>LLMs, RAG, Prompt Engineering, Prompt Evaluation, LangChain, LangGraph, OpenAI, Hugging Face</p>
             </div>
+            <div class="services-box glass-panel">
+                <i class="bx bx-search-alt-2"></i>
+                <h3>Retrieval</h3>
+                <p>Vector Search, Semantic Search, Hybrid Search, FAISS, Whoosh, Neo4j, ChromaDB</p>
             </div>
-</div>
-</section>
-
-<!-- <section class="contact" id="contact">
-    <h2 class="heading">Contact<span>Me!</span></h2>
-    <form action="#">
-        <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
+            <div class="services-box glass-panel">
+                <i class="bx bx-server"></i>
+                <h3>Backend</h3>
+                <p>FastAPI, REST APIs, Authentication, JSON Handling, WebSockets, Regex, Spring Boot</p>
+            </div>
+            <div class="services-box glass-panel">
+                <i class="bx bx-data"></i>
+                <h3>Languages & Data</h3>
+                <p>Python, SQL, PostgreSQL, MySQL, SQLite, Pandas, NumPy, Scikit-learn, Data Preprocessing</p>
+            </div>
         </div>
-        <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
+    </section>
+
+    <section class="Portfolio" id="Portfolio">
+        <h2 class="heading">Personal <span>Projects</span></h2>
+        <div class="portfolio-container"> 
+            
+            <div class="portfolio-box glass-panel">
+                <img src="images/ai_math_sim.png" alt="Complete AI Math Simulations">
+                <div class="portfolio-layer">
+                    <h4>Complete AI Math Simulations</h4>
+                    <p>Interactive simulations for learning complex mathematics using AI concepts.</p>
+                    <a href="https://huggingface.co/spaces/shikharyashmaurya/complete-ai-math-simulations" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box glass-panel">
+                <img src="images/physics_sim.png" alt="Physics Simulation">
+                <div class="portfolio-layer">
+                    <h4>Physics Simulation</h4>
+                    <p>Advanced physics engine and simulation visualizations.</p>
+                    <a href="https://huggingface.co/spaces/shikharyashmaurya/physics-simulation" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box glass-panel">
+                <img src="images/ai_cookbook.png" alt="AI Cookbook">
+                <div class="portfolio-layer">
+                    <h4>AI Cookbook</h4>
+                    <p>A comprehensive repository of AI recipes, architectures, and implementations.</p>
+                    <a href="https://github.com/shikharyashmaurya/ai-cookbook" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box glass-panel">
+                <img src="images/study_app.png" alt="Study App">
+                <div class="portfolio-layer">
+                    <h4>Study App</h4>
+                    <p>A futuristic AI-powered application designed to enhance learning and productivity.</p>
+                    <a href="https://huggingface.co/spaces/shikharyashmaurya/study-app" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
+    </section>
 
-    </form>
-</section> -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop"> 
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
 
-<footer class="footer">
-    <div class="footer-text">
-        <p>Copyright &copy; 2023 | All Rights Reserved.</p>
-    </div>
-    <div class="footer-iconTop"> 
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-    </div>
-</footer>
-
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
